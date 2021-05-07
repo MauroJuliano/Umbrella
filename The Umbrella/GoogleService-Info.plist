@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>496966990322-am1phc2aj5lcqe8fnt9sun32fdpcp9l1.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.496966990322-am1phc2aj5lcqe8fnt9sun32fdpcp9l1</string>
+	<key>API_KEY</key>
+	<string>AIzaSyA8rJ6IEYYlwT8zXR8JdVPSnbWCKuWGbkY</string>
+	<key>GCM_SENDER_ID</key>
+	<string>496966990322</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>Lestad.The-Umbrella</string>
+	<key>PROJECT_ID</key>
+	<string>the-umbrella</string>
+	<key>STORAGE_BUCKET</key>
+	<string>the-umbrella.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:496966990322:ios:4b1b483a5b2ed38f43136b</string>
+</dict>
+</plist>
