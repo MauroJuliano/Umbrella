@@ -56,16 +56,16 @@
                                     <constraint firstAttribute="width" constant="132" id="TbL-jY-IXe"/>
                                 </constraints>
                             </view>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The Umbrella" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eyX-LL-WaE">
-                                <rect key="frame" x="84" y="231" width="240" height="76"/>
-                                <fontDescription key="fontDescription" name="PartyLetPlain" family="Party LET" pointSize="65"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Check The Umbrella " textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s2d-rL-Kav">
-                                <rect key="frame" x="55" y="390" width="246.5" height="51.5"/>
-                                <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="32"/>
-                                <nil key="textColor"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="the umbrellawhite2" translatesAutoresizingMaskIntoConstraints="NO" id="knt-Mj-XMD">
+                                <rect key="frame" x="15" y="134" width="384" height="224"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="224" id="b6B-RB-eLz"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Check The Umbrella " lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s2d-rL-Kav">
+                                <rect key="frame" x="50" y="448" width="200.5" height="42"/>
+                                <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="26"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
@@ -73,13 +73,13 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="x1s-75-T4R" secondAttribute="trailing" constant="-118" id="45C-jt-EKn"/>
-                            <constraint firstItem="eyX-LL-WaE" firstAttribute="top" secondItem="xdk-ob-yLU" secondAttribute="top" constant="187" id="ITs-ms-Axo"/>
                             <constraint firstAttribute="bottom" secondItem="Bq1-nM-993" secondAttribute="bottom" constant="-36" id="M1G-EA-YVh"/>
+                            <constraint firstItem="xdk-ob-yLU" firstAttribute="trailing" secondItem="knt-Mj-XMD" secondAttribute="trailing" constant="15" id="MoP-2S-Cpn"/>
                             <constraint firstItem="x1s-75-T4R" firstAttribute="top" secondItem="Zot-q3-I2c" secondAttribute="top" constant="-69" id="P4x-IO-H7O"/>
-                            <constraint firstItem="eyX-LL-WaE" firstAttribute="leading" secondItem="xdk-ob-yLU" secondAttribute="leading" constant="84" id="gnS-xK-6Vy"/>
-                            <constraint firstItem="s2d-rL-Kav" firstAttribute="top" secondItem="eyX-LL-WaE" secondAttribute="bottom" constant="83" id="igR-PO-Pvd"/>
-                            <constraint firstItem="s2d-rL-Kav" firstAttribute="leading" secondItem="xdk-ob-yLU" secondAttribute="leading" constant="55" id="mw8-1D-Djf"/>
-                            <constraint firstItem="xdk-ob-yLU" firstAttribute="trailing" secondItem="eyX-LL-WaE" secondAttribute="trailing" constant="90" id="nab-Z0-YJo"/>
+                            <constraint firstItem="knt-Mj-XMD" firstAttribute="leading" secondItem="xdk-ob-yLU" secondAttribute="leading" constant="15" id="R7m-te-TBh"/>
+                            <constraint firstItem="s2d-rL-Kav" firstAttribute="leading" secondItem="xdk-ob-yLU" secondAttribute="leading" constant="50" id="Vbf-U6-9Wa"/>
+                            <constraint firstItem="knt-Mj-XMD" firstAttribute="top" secondItem="xdk-ob-yLU" secondAttribute="top" constant="90" id="c1r-fJ-mQu"/>
+                            <constraint firstItem="s2d-rL-Kav" firstAttribute="top" secondItem="x1s-75-T4R" secondAttribute="bottom" constant="43" id="hls-SP-gJP"/>
                             <constraint firstAttribute="bottom" secondItem="JmV-UQ-mUD" secondAttribute="bottom" id="oS7-6h-aLa"/>
                             <constraint firstItem="JmV-UQ-mUD" firstAttribute="trailing" secondItem="xdk-ob-yLU" secondAttribute="trailing" id="rDc-8e-S4w"/>
                             <constraint firstItem="Bq1-nM-993" firstAttribute="leading" secondItem="Zot-q3-I2c" secondAttribute="leading" constant="-86" id="uKb-CT-W8h"/>
@@ -99,6 +99,7 @@
     <resources>
         <image name="liquid2" width="3535" height="4756"/>
         <image name="liquid4" width="4756" height="3535"/>
+        <image name="the umbrellawhite2" width="899" height="593"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

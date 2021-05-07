@@ -12,9 +12,13 @@ class LoginViewController: UIViewController {
     @IBOutlet var emailTextField: UITextField!
     @IBOutlet var passwordTextField: UITextField!
     @IBOutlet var viewButton: UIView!
+    @IBOutlet var cardView: UIView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        let back = UIColor(hexString: "#130f26")
+        self.view.backgroundColor = back
+        cardView.backgroundColor = back
         viewButton.roundCorners(.topLeft, radius: 60)
         // Do any additional setup after loading the view.
     }

@@ -22,6 +22,8 @@ class RegisterViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        let back = UIColor(hexString: "#130f26")
+        self.view.backgroundColor = back
         buttonView.roundCorners(.topLeft, radius: 60)
         // Do any additional setup after loading the view.
     }

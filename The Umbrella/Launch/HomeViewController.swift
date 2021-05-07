@@ -15,14 +15,15 @@ class HomeViewController: UIViewController {
     @IBOutlet var connectButton: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        let back = UIColor(hexString: "#130f26")
+        self.view.backgroundColor = back
         weatherLabel.text = "Check The Umbrella \n to be prepared for any \n weather"
         connectView.roundCorners(.topLeft, radius: 60)
         // Do any additional setup after loading the view.
     }
     override func viewDidAppear(_ animated: Bool) {
         if let uid = Auth.auth().currentUser?.uid {
-          goToFeed()
+        //  goToFeed()
         }
     }
     

@@ -16,6 +16,7 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
     //Outlets
     @IBOutlet var locationsCollection: UICollectionView!
     
+    @IBOutlet var locationsCard: UIView!
     @IBOutlet var userImage: UIImageView!
     @IBOutlet var cardBackground: UIView!
     @IBOutlet var backgroundImage: UIImageView!
@@ -47,9 +48,17 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
     }
     func setupUI(){
         //userImage.roundCorners(.allCorners, radius: 15)
-        //cardBackground.roundCorners(.allCorners, radius: 20)
+        let card = UIColor(hexString: "#2c2159")
+        cardBackground.backgroundColor = card
+        locationsCard.backgroundColor = card
+        locationsCard.roundCorners(.allCorners, radius: 20)
+        cardBackground.roundCorners(.allCorners, radius: 20)
         let lilas = UIColor(hexString: "#6A6A93")
         CityName.textColor = lilas
+        
+        let back = UIColor(hexString: "#130f26")
+        self.view.backgroundColor = back
+        
     }
     func requestSetup(){
         request.downloadData(completionHandler: { success,_ in
@@ -107,7 +116,7 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
     
     func updateUI(){
         CityName.text = currentWeather.cityName
-        Temp.text = " \(currentWeather.currentTemp)°"
+        Temp.text = "\(currentWeather.currentTemp)°"
         let weatherType = currentWeather.weatherType
         
         if weatherType == "Rain"{

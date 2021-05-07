@@ -46,31 +46,25 @@
                                 </subviews>
                                 <color key="backgroundColor" red="0.35663973669999999" green="0.23560903129999999" blue="0.38040986659999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </view>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The Umbrella" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6ZF-4h-wWG">
-                                <rect key="frame" x="87" y="254" width="240" height="76"/>
-                                <fontDescription key="fontDescription" name="PartyLetPlain" family="Party LET" pointSize="65"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kdi-Fe-Zyo">
                                 <rect key="frame" x="40" y="375" width="356" height="160"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="i4q-9L-D21">
                                         <rect key="frame" x="47" y="16" width="263" height="34"/>
-                                        <color key="backgroundColor" red="0.87450980389999999" green="0.7725490196" blue="0.99607843139999996" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="yOv-bQ-ZFS">
                                         <rect key="frame" x="47" y="63" width="263" height="34"/>
-                                        <color key="backgroundColor" red="0.87450980389999999" green="0.7725490196" blue="0.99607843139999996" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                     </textField>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Don't have a account? Register" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KjT-kx-JD7">
                                         <rect key="frame" x="47" y="120" width="213" height="18"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                        <nil key="textColor"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Quh-BH-4hb">
@@ -80,7 +74,7 @@
                                             <constraint firstAttribute="height" constant="30" id="fSB-cg-b5w"/>
                                         </constraints>
                                         <state key="normal" title="Here">
-                                            <color key="titleColor" red="0.35663973669999999" green="0.23560903129999999" blue="0.38040986659999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <color key="titleColor" systemColor="systemPurpleColor"/>
                                         </state>
                                         <connections>
                                             <action selector="registerButton:" destination="NDe-6J-P9f" eventType="touchUpInside" id="U10-R0-v2o"/>
@@ -102,22 +96,29 @@
                                     <constraint firstAttribute="trailing" secondItem="yOv-bQ-ZFS" secondAttribute="trailing" constant="46" id="yVq-6q-LTP"/>
                                 </constraints>
                             </view>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="the umbrellawhite2" translatesAutoresizingMaskIntoConstraints="NO" id="3SB-qE-hMZ">
+                                <rect key="frame" x="20" y="94" width="374" height="224"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="224" id="SU0-fg-9fz"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="4U0-9A-BcQ"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="kdi-Fe-Zyo" firstAttribute="leading" secondItem="4U0-9A-BcQ" secondAttribute="leading" constant="40" id="3sm-6H-g3C"/>
-                            <constraint firstItem="6ZF-4h-wWG" firstAttribute="leading" secondItem="4U0-9A-BcQ" secondAttribute="leading" constant="87" id="FUM-wh-Vqr"/>
-                            <constraint firstItem="kdi-Fe-Zyo" firstAttribute="top" secondItem="6ZF-4h-wWG" secondAttribute="bottom" constant="45" id="G0h-Da-VTk"/>
+                            <constraint firstItem="4U0-9A-BcQ" firstAttribute="trailing" secondItem="3SB-qE-hMZ" secondAttribute="trailing" constant="20" id="5Mh-xq-E1N"/>
+                            <constraint firstItem="kdi-Fe-Zyo" firstAttribute="top" secondItem="3SB-qE-hMZ" secondAttribute="bottom" constant="57" id="Avb-tB-kKE"/>
                             <constraint firstAttribute="bottom" secondItem="neF-La-BVr" secondAttribute="bottom" constant="-105" id="Gz5-LA-bYf"/>
                             <constraint firstItem="neF-La-BVr" firstAttribute="top" secondItem="kdi-Fe-Zyo" secondAttribute="bottom" constant="56" id="MjA-4T-PTb"/>
                             <constraint firstItem="4U0-9A-BcQ" firstAttribute="trailing" secondItem="kdi-Fe-Zyo" secondAttribute="trailing" constant="18" id="X7n-ZG-2qj"/>
-                            <constraint firstItem="6ZF-4h-wWG" firstAttribute="top" secondItem="4U0-9A-BcQ" secondAttribute="top" constant="210" id="hM8-uW-6li"/>
-                            <constraint firstItem="4U0-9A-BcQ" firstAttribute="trailing" secondItem="6ZF-4h-wWG" secondAttribute="trailing" constant="87" id="qSy-it-T5R"/>
+                            <constraint firstItem="3SB-qE-hMZ" firstAttribute="top" secondItem="4U0-9A-BcQ" secondAttribute="top" constant="50" id="cR5-NM-33U"/>
+                            <constraint firstItem="3SB-qE-hMZ" firstAttribute="leading" secondItem="4U0-9A-BcQ" secondAttribute="leading" constant="20" id="vHn-lS-baL"/>
                             <constraint firstItem="neF-La-BVr" firstAttribute="leading" secondItem="u0l-Bd-Z7g" secondAttribute="leading" constant="-115" id="wVE-UI-cPW"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="cardView" destination="kdi-Fe-Zyo" id="lDr-j5-0su"/>
                         <outlet property="emailTextField" destination="i4q-9L-D21" id="tQj-cG-lmD"/>
                         <outlet property="passwordTextField" destination="yOv-bQ-ZFS" id="Q4C-Op-fzS"/>
                         <outlet property="viewButton" destination="3uh-qr-JCX" id="JoD-db-EJQ"/>
@@ -131,8 +132,12 @@
     <resources>
         <image name="liquid" width="4756" height="3535"/>
         <image name="liquid2" width="3535" height="4756"/>
+        <image name="the umbrellawhite2" width="899" height="593"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemPurpleColor">
+            <color red="0.68627450980392157" green="0.32156862745098042" blue="0.87058823529411766" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
